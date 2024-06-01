@@ -1,0 +1,18 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="BookStore.search.search.clothes" />
+          <option value="BookStore.search.search.mobile" />
+          <option value="BookStore.search.search.book" />
+          <option value="OrderService.OrderService.urls.views" />
+          <option value="OrderService.OrderService.urls.service" />
+          <option value="CartService.CartService.urls.views" />
+          <option value="CartService.CartService.urls.service" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
