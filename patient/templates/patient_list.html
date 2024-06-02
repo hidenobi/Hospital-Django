@@ -3,6 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <title>Patient List</title>
+    <style>
+        /* General styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5em;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        /* Table styling */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f0f0f0;
+            font-weight: bold;
+        }
+
+        /* Alternate row background color */
+        tr:nth-child(odd) {
+            background-color: #fff;
+        }
+
+        /* Hover effect for table rows */
+        tr:hover {
+            background-color: #e0e0e0;
+        }
+
+        /* Edit link styling */
+        a {
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+            padding: 5px;
+            border: 1px solid #007bff;
+            border-radius: 3px;
+        }
+
+        a:hover {
+            background-color: #007bff;
+            color: #fff;
+        }
+    </style>
 </head>
 <body>
 <h1>Patient List</h1>
@@ -24,9 +81,7 @@
         <td>{{ patient.address }}</td>
         <td>{{ patient.phone_number }}</td>
         <td>{{ patient.email }}</td>
-        <td>
-            <a href="{% url 'edit_patient' patient.id %}">Edit</a>
-        </td>
+        <td><a href="{% url 'edit_patient' patient.id %}">Edit</a></td>
     </tr>
     {% endfor %}
     </tbody>
