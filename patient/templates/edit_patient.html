@@ -2,7 +2,61 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Patient List</title>
+    <title>Edit Patient</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2em;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        /* Form styling */
+        form {
+            display: flex;
+            flex-wrap: wrap;
+            width: 50%;
+            margin: 0 auto;
+        }
+
+        label {
+            width: 120px;
+            display: inline-block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        div {
+            margin-bottom: 15px;
+        }
+
+        input[type="text"],
+        input[type="email"] {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+        }
+
+        button[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #0067cc;
+        }
+    </style>
 </head>
 <body>
 <h1>Edit Patient</h1>
@@ -14,7 +68,7 @@
     </div>
     <div>
         <label for="address">Address:</label>
-        <input type="text" id="address" name="address" value="{{ patient.address }}">
+        <input type="text" id="address" name="address" value="{{ patient.full_name }}">
     </div>
     <div>
         <label for="phone_number">Phone Number:</label>
